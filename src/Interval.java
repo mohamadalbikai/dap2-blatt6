@@ -1,6 +1,6 @@
+import java.util.Comparator;
 
-
-public class Interval {
+public class Interval implements Comparator<Interval> {
 
 	private int start;
 	private int end;
@@ -32,5 +32,16 @@ public class Interval {
 	 {
 		 return "[ "+start+" , "+end+" ]";
 	 }
+	@Override
+	public int compare(Interval a, Interval b) {
+		if(a.getEnd()<b.getEnd())
+		{
+			return 1;
+		}
+		else if(a.getEnd()>b.getEnd())
+			return -1;
+		return 0;
+		
+	}
 	
 }

@@ -9,6 +9,10 @@ public class Anwendung {
 	public static ArrayList<Interval> intervalScheduling
 	(ArrayList<Interval> intervals)
 	{
+		ArrayList<Interval> list = new ArrayList<Interval>();
+		intervals.mergesort();
 		
+		return list;
 	}
+	
 }
