@@ -1,9 +1,10 @@
 
-public class Intervale {
+
+public class Interval {
 
 	private int start;
 	private int end;
-	public Intervale(int a,int b)
+	public Interval(int a,int b)
 	{
 		try {
 			if(a<b)
@@ -29,11 +30,7 @@ public class Intervale {
 	 }
 	 public String toString()
 	 {
-		 return "";
+		 return "[ "+start+" , "+end+" ]";
 	 }
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-    System.out.println("ich bin hier ");
-	}
-
+	
 }
